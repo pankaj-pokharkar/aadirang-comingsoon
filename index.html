@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aadirang – Coming Soon</title>
+  <meta name="description" content="Aadirang – handcrafted & thoughtful creations. Coming soon." />
+
+  <style>
+    :root {
+      --bg: #f7f2ea;
+      --text: #083344;
+      --accent: #0f766e;
+      --accent-dark: #115e59;
+      --muted: rgba(8, 51, 68, 0.6);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .page {
+      width: min(960px, 100%);
+      padding: 1.5rem 1.25rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.25rem;
+    }
+    .logo-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .6rem;
+    }
+    .logo-img {
+      width: 118px;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 50px;
+    }
+    .brand-title {
+      font-size: 1.5rem;
+      letter-spacing: .04em;
+      font-weight: 700;
+    }
+    .tagline {
+      font-size: .9rem;
+      color: var(--muted);
+      max-width: 420px;
+      line-height: 1.4;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0.2rem 0 0.5rem;
+      letter-spacing: -.02em;
+    }
+    .pill {
+      display: inline-flex;
+      padding: .25rem .9rem;
+      background: rgba(15, 118, 110, 0.12);
+      border-radius: 999px;
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--accent-dark);
+      font-weight: 600;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: .7rem 1.05rem;
+      border-radius: .75rem;
+      font-weight: 600;
+      font-size: .9rem;
+      box-shadow: 0 12px 26px rgba(0,0,0,.12);
+      transition: transform .12s ease-out;
+    }
+    .cta:hover {
+      transform: translateY(-1px);
+    }
+    .subnote {
+      font-size: .7rem;
+      color: var(--muted);
+    }
+
+    /* layout for larger screens */
+    @media (min-width: 720px) {
+      .page {
+        text-align: left;
+        align-items: flex-start;
+      }
+      .hero-flex {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        width: 100%;
+      }
+      .hero-left {
+        flex: 1 1 50%;
+      }
+      .hero-right {
+        flex: 1 1 50%;
+        border-left: 1px solid rgba(8, 51, 68, .08);
+        padding-left: 2.5rem;
+      }
+      .logo-wrap {
+        align-items: flex-start;
+      }
+      h1 {
+        font-size: 2.35rem;
+      }
+    }
+
+    /* simple decorative bg */
+    .bg-blur {
+      position: fixed;
+      inset: -180px auto auto -180px;
+      width: 340px;
+      height: 340px;
+      background: radial-gradient(circle, rgba(15,118,110,.19) 0%, rgba(247,242,234,0) 70%);
+      filter: blur(5px);
+      z-index: -1;
+    }
+    .bg-blur-2 {
+      position: fixed;
+      bottom: -160px;
+      right: -90px;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(8,51,68,.08) 0%, rgba(247,242,234,0) 60%);
+      filter: blur(3px);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-blur"></div>
+  <div class="bg-blur-2"></div>
+
+  <main class="page">
+    <div class="hero-flex">
+      <div class="hero-left">
+        <div class="logo-wrap">
+          <img src="aadirang_logo_1.jpg" alt="Aadirang logo" class="logo-img" />
+          <div class="brand-title">AADIRANG</div>
+          <div class="tagline">Curated designs inspired by Indian arts, colour and craft.</div>
+        </div>
+
+        <div style="margin-top:1.4rem;">
+          <span class="pill">Coming soon</span>
+          <h1>We’re setting up something beautiful.</h1>
+          <p class="tagline">
+            Be the first to know when we drop our new collection, studio updates and handcrafted pieces.
+          </p>
+          <!-- WhatsApp CTA -->
+          <a
+            href="https://chat.whatsapp.com/DPSzTRGCd3SA8BIHpjpcjI?mode=wwt"
+            target="_blank"
+            rel="noreferrer"
+            class="cta"
+          >
+            Join WhatsApp Community
+            <span aria-hidden="true">→</span>
+          </a>
+          <p class="subnote" style="margin-top:.45rem;">
+            Early access • launch offers • behind-the-scenes
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <p class="tagline" style="margin-bottom:1.1rem;">
+          What to expect:
+        </p>
+        <ul style="margin:0; padding-left:1rem; line-height:1.5; color:var(--muted); font-size:.9rem;">
+          <li>Limited-run apparel & accessories</li>
+          <li>Art-inspired palettes (like the peacock logo)</li>
+          <li>Handpicked collabs & custom work</li>
+        </ul>
+        <p class="subnote" style="margin-top:1.1rem;">
+          Follow the colours. Follow the craft. Follow Aadirang.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
